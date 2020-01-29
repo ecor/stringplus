@@ -1,10 +1,12 @@
 NULL
 #' Sum operations among two or more character string 
 #' 
-#' @pram e1,e2 addeds 
+#' @param e1,e2 addends
 #' 
 #' @export 
+# ##importFrom base '+'
 #' 
+#' @rdname Plus
 #' @examples 
 #' 
 #' subject <- "Susan"
@@ -19,15 +21,24 @@ NULL
 #' out <- dir+files
 #' 
 #' 
-`+` <- function (e1, e2) UseMethod("+")
+'+' <- function (e1, e2) UseMethod("+")
 #'
-#' 
+NULL
+#'
+#' @export
+#' @method + default
+#' @S3method + default
+#' @aliases plus
 
-`+.default` <- function (e1, e2) .Primitive("+")(e1, e2)
-#'
-#' 
-#' 
-`+.character` <- function(e1, e2) 
-	if(length(e1) == length(e2)) {
+'+.default' <- function (e1, e2) .Primitive("+")(e1, e2)
+NULL
+#
+#' @export
+#' @method + character
+#' @S3method + character
+#' @aliases plus
+'+.character' <- function(e1, e2) 
+	##if(length(e1) == length(e2)) {
 		paste(e1, e2, sep = '')
-	} else stop('String Vectors of Different Lengths')
+##} else stop('String Vectors of Different Lengths')
+###https://cran.r-project.org/doc/manuals/r-release/R-exts.html#Generic-functions-and-methods
