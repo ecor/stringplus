@@ -28,8 +28,8 @@ library(devtools)
 options(repos = c(CRAN="http://cran.r-project.org"))
 
 
-##path <- "/home/ecor/Dropbox/R-packages" 
-path <- '/STORAGE/projects/R-Packages/r-packages' 
+path <- "/home/ecor/Dropbox/R-packages" 
+##path <- '/STORAGE/projects/R-Packages/r-packages' 
 pkg_name <- "stringplus"
 pkg_dir <- paste(path,pkg_name,sep="/")
 cran_pkg_path <- paste(path,"toCran",sep="/")
