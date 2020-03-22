@@ -2,5 +2,4 @@
 
 S3method("+",character)
 S3method("+",default)
-S3method(sum,character)
 export("+")

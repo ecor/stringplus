@@ -4,10 +4,10 @@
 \alias{+}
 \title{Sum operations among two or more character string}
 \usage{
-"+"(x, y)
+"+"(e1, e2)
 }
 \arguments{
-\item{x, y}{addends}
+\item{e1, e2}{addends}
 }
 \description{
 Sum operations among two or more character string
